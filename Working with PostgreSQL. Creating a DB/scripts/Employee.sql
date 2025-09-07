@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS Emloyee (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    department VARCHAR(100) NOT NULL,
+    boss_id INTEGER REFERENCES Emloyee(id)
+); 
